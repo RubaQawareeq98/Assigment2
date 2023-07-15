@@ -6,8 +6,7 @@ let users= await utility();
 function userFormat(users){
     let names=[];
     users.map(user=>{
-        names.push(Object.values(user).join(" "))
-
+        names.push(user["name"].title+". "+user["name"].first+" "+user["name"].last);
     })
 
 
