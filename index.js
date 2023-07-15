@@ -1,9 +1,11 @@
 
 ///////////////////////////////////////////////////////
 function asyncCall() {
+    var result=null;
 let promise= new Promise(resolve => {{
     setTimeout(() => {
-       resolve('data')
+        result='data';
+       resolve(result)
     }, 3000)
     }})
 
